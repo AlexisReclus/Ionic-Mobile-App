@@ -1,4 +1,4 @@
-# appli_mobile_s8
+# appli_mobile
 
 Install Dependencies: 
 ```
