@@ -1,14 +1,14 @@
 # appli_mobile_s8
 
-INSTALL DEPENDENCIES\n
-npm install ngx-qrcode2 --save\n
-ionic cordova plugin add phonegap-plugin-barcodescanner\n
-npm install --save @ionic-native/barcode-scanner\n
-ionic cordova plugin add cordova-plugin-advanced-http\n
+INSTALL DEPENDENCIES
+npm install ngx-qrcode2 --save
+ionic cordova plugin add phonegap-plugin-barcodescanner
+npm install --save @ionic-native/barcode-scanner
+ionic cordova plugin add cordova-plugin-advanced-http
 npm install --save @ionic-native/http\n
 
-Add Platform/n
-ionic cordova platform add browser\n
+Add Platform
+ionic cordova platform add browser
 
-Launch the project\n
-ionic serve\n
+Launch the project
+ionic serve
