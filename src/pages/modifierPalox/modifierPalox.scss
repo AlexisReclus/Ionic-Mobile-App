@@ -1,0 +1,84 @@
+page-modifierPalox {
+
+  .carac{
+    margin-left:0em;
+    display:inline-block;
+    //display: inline;
+  }
+#global #gauche {
+    float:left;
+    width:10%;
+}
+#global #droite {
+    margin-left:10%
+}
+
+  .nb{
+    margin-left:3em;
+    display:inline-block;
+  }
+  .bt{
+    display:inline-block;
+  }
+  .mydiv{
+    padding-top: 35px;
+  }
+
+  /*#nombreDeBouteilles > button{
+    width: 20%;
+    display: inline;
+  }
+
+  #nombreDeBouteilles > input{
+    width: 20%;
+    display: inline;
+  }*/
+
+
+
+  #modifs{
+    font-size:18px;
+    color:#7F0100;
+  }
+  .button{
+    background-color: #7F0100;
+  }
+  .button:active{
+    background-color: #7F0100;
+  }
+  :not(.disable-hover).button-md:hover{
+    background-color: #7F0100;
+  }
+
+  :not(.disable-hover).button-md-secondary:hover{
+    background-color: #32db64;
+  }
+  #createcode{
+    background-color: #488aff;
+  }
+  #scancode{
+    background-color: #32db64;
+  }
+
+
+  .alert [aria-checked=true] .alert-checkbox-icon{
+    background-color: #7F0100;
+    border-color: #7F0100;
+  }
+  :not(.disable-hover).button:hover{
+    background-color: #7F0100;
+  }
+
+  :not(.disable-hover).button-secondary:hover{
+    background-color: #32db64;
+  }
+
+  .alert .alert-button .alert-button-default{
+    color: #7F0100;
+  }
+
+  .alert [aria-checked=true] .alert-checkbox-icon{
+    background-color: #7F0100;
+    border-color: #7F0100;
+  }
+}

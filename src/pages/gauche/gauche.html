@@ -1,0 +1,46 @@
+<ion-header >
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu" ></ion-icon>
+    </button>
+    <ion-title><ion-icon name="pin"></ion-icon> Rechercher un palox</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <form (ngSubmit)="logForm()" >
+
+      <ion-item class="form-group">
+        <ion-label>Couleur</ion-label>
+        <ion-select [(ngModel)]="demande.couleur" name="couleur">
+          <ion-option *ngFor="let coul of couleurs">{{coul}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item class="form-group">
+        <ion-label>Référence</ion-label>
+        <ion-select [(ngModel)]="demande.ref" name="ref" >
+          <ion-option *ngFor="let ref of ref" selected="false">{{ref}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item class="form-group">
+        <ion-label>Millésime</ion-label>
+        <ion-select [(ngModel)]="demande.millesime" name="millesime" >
+          <ion-option *ngFor="let mil of millesime" selected="false">{{mil}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item class="form-group">
+        <ion-label>Format</ion-label>
+        <ion-select [(ngModel)]="demande.format" name="format" >
+          <ion-option *ngFor="let form of format" selected="false">{{form}}</ion-option>
+        </ion-select>
+      </ion-item>
+    <div class="mydiv"></div>
+    <button ion-button name="button" (click)="findWine()" type="submit"> Valider </button>
+    <button class ="button mybutton" ion-button (click)="resetOptions()">Réinitialiser</button>
+  </form>
+
+</ion-content>

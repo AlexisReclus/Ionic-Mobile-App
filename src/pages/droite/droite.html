@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><ion-icon name="qr-scanner"></ion-icon> Scanner un QR Code</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <!--<ion-input type="text" placeholder="My QR Code data" [(ngModel)]="qrData">
+    </ion-input>-->
+  </ion-item>
+  <button ion-button full icon-left (click)="scanCode()" color="primary" id="scancode"><ion-icon name="qr-scanner"></ion-icon>Scanner</button>
+
+  <ion-card id = "msgerror" *ngIf="msgErreur">
+    <ion-card-content>
+      {{msgErreur}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,23 @@
+page-accueil {
+  .tabs-md [aria-selected=true].tab-button{
+    color:#7F0100;
+  }
+  .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color:#FFFF;
+  }
+  .bar-button-default, .bar-button-clear-default, .bar-button-default{
+    color:#FFFF;
+  }
+  .tabs [aria-selected=true].tab-button{
+    color:#7F0100;
+  }
+
+.alert-md .alert-button{
+  color: #7F0100;
+}
+.alert-button .alert-button-md .alert-button-default .alert-button-default-md{
+  color:#7F0100;
+
+}
+
+}

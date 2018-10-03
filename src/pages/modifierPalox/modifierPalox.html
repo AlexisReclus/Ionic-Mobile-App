@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Modifier un palox</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content *ngIf="data">
+    <div class="mydiv">
+    </div>
+  <!--<ion-header> id: {{nID}}</ion-header>-->
+  <ion-list>
+    <ion-label stacked id="modifs">Couleur :</ion-label>
+    <ion-item>
+      <ion-select [(ngModel)]="data.color" name="couleur">
+        <ion-option *ngFor="let coul of listeCouleurs">{{coul}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-label stacked id="modifs">Millésime :</ion-label>
+    <ion-item >
+      <ion-input type="text" [(ngModel)]="data.year" placeholder={{data.year}}></ion-input>
+    </ion-item>
+
+    <ion-label stacked id="modifs">Référence :</ion-label>
+    <ion-item>
+      <ion-select [(ngModel)]="data.ref" name="reference">
+        <ion-option *ngFor="let ref of listeReferences">{{ref}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-label stacked id="modifs">Format :</ion-label>
+    <ion-item>
+      <ion-select [(ngModel)]="data.format" name="format">
+        <ion-option *ngFor="let format of listeFormat">{{format}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-label stacked id="modifs">Nombre de bouteille :</ion-label>
+    <div id="nombreDeBouteilles">
+        <ion-input class="carac" type="text"  [ngModel]="newQty"></ion-input>
+        <div id="global">
+          <div id="gauche">
+            <ion-input class="carac" type="text"  [ngModel]="addBottles" (ngModelChange)="onChange($event)"></ion-input>
+          </div>
+          <div id="droite">
+            <button class="btn carac" ion-button name="button" (click)="ajouter()"><ion-icon name="add" isActive="false"></ion-icon></button>
+            <button class="btn carac" ion-button name="button" (click)="soustraire()"><ion-icon name="remove" isActive="false"></ion-icon></button>
+          </div>
+
+
+        </div>
+
+
+    </div>
+    <!--<button class="btn" name="button"><ion-icon name="checkmark" isActive="false"></ion-icon></button>
+    <ion-item >
+      <ion-input type="text"  value="{{data.qty}}"></ion-input>
+    </ion-item>-->
+
+      <button ion-button name="button" (click)="Enregistrer()"> Enregistrer </button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,93 @@
+page-listePalox {
+  #headercard{
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui;
+    color: #7F0100;
+  }
+#msgerror{
+  text-align: center;
+  font-size: 20px;
+  font-family: system-ui;
+  color: #7F0100;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.button-clear-ios:hover:not(.disable-hover) {
+  color: #7F0100;
+  opacity: 0.6;
+}
+.button-clear-md-primary:hover:not(.disable-hover) {
+  color: #7F0100;
+}
+.button-md:hover:not(.disable-hover) {
+  background-color: #7F0100;
+}
+.button-clear-ios-primary:hover:not(.disable-hover) {
+  color: #7F0100;
+}
+  .mydiv{
+    padding-top: 35px;
+  }
+
+  .myclass{
+    text-align: left;
+    font-size: 15px;
+    color:black;
+  }
+  .myclass2{
+    text-align: center;
+    font-size: 18px;
+    color:black;
+  }
+
+  .button{
+    background-color: #7F0100;
+  }
+  .button:active{
+    background-color: #7F0100;
+  }
+  :not(.disable-hover).button-md:hover{
+    background-color: #7F0100;
+  }
+
+  :not(.disable-hover).button-md-secondary:hover{
+    background-color: #32db64;
+  }
+  #createcode{
+    background-color: #488aff;
+  }
+  #scancode{
+    background-color: #32db64;
+  }
+
+  .alert .alert-button{
+    color: #7F0100;
+  }
+
+  .alert [aria-checked=true] .alert-checkbox-icon{
+    background-color: #7F0100;
+    border-color: #7F0100;
+  }
+  :not(.disable-hover).button:hover{
+    background-color: #7F0100;
+  }
+
+  :not(.disable-hover).button-secondary:hover{
+    background-color: #32db64;
+  }
+
+  .alert .alert-button{
+    color: #7F0100;
+  }
+
+  .alert [aria-checked=true] .alert-checkbox-icon{
+    background-color: #7F0100;
+    border-color: #7F0100;
+  }
+
+  .card{
+    box-shadow: 1px 1px 10px grey;
+  }
+}

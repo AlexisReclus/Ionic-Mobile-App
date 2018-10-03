@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><ion-icon name="pin"></ion-icon> Recherche par ID</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Rechercher un palox avec son ID </h3>
+
+  <ion-searchbar id="searchbar" placeholder="Numero du palox" (ionInput)="getItems($event)" (ionInput)="verifNID($event)"></ion-searchbar>
+  <ion-list>
+    <button ion-item *ngFor="let item of searchList" (click)="push_page(item)" >
+       {{ item }}
+    </button>
+  </ion-list>
+  <ion-card id="msgerror" *ngIf="msgError">
+    {{msgError}}
+  </ion-card>
+
+</ion-content>

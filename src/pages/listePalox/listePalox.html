@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><ion-icon name="paper"></ion-icon> Liste des palox</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card id="msgerror" *ngIf="msgError">
+    {{msgError}}
+  </ion-card>
+</ion-content>
+<ion-content *ngIf="data">
+<div class="mydiv"></div>
+
+  <ion-card  *ngFor="let obj of data">
+  <ion-card-header id="headercard">
+    Palox numero {{obj._id}}
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item class="myclass2">
+        Rang: {{obj.rank}}  Position: {{obj.pos}}  Hauteur: {{obj.layer}}
+    </ion-item>
+    <ion-item class="myclass">
+    Couleur: {{obj.color}}
+  </ion-item>
+  <ion-item class="myclass">
+    Millésime: {{obj.year}}
+  </ion-item >
+  <ion-item class="myclass">
+    Reference: {{obj.ref}}
+  </ion-item>
+  <ion-item class="myclass">
+    Nombre: {{obj.qty}}
+  </ion-item>
+  <button ion-button (click)="Modifier(obj._id,obj.color,obj.millesime,obj.format,obj.nombre,obj.ref)"  > Modifier </button>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
