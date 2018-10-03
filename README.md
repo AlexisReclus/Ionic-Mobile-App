@@ -10,5 +10,5 @@ npm install --save @ionic-native/http\n
 Add Platform:
 ionic cordova platform add browser
 
-Launch the project
+Launch the project:
 ionic serve
